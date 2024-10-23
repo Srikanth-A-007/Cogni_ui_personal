@@ -1,0 +1,23 @@
+/* C:\Srikanth\React_JS\01basicreact\src\App.css */
+:root {
+    --main-color: #3bc405;
+    --secondary-color: red;
+  }
+  /* C:\Srikanth\React_JS\01basicreact\src\App.css */
+.app-container {
+  background-color: hwb(0 99% 0%); /* Light Gray */
+  min-height: 100vh; /* Ensure the div takes full height */
+  padding: 20px;
+}
+
+  h1 {
+    color: var(--main-color);
+  }
+
+.textField {
+    border: 2px solid var(--main-color); /* Specify the width and style */
+    padding: 8px; /* Optional: Add some padding */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    margin-top: 2px;
+}
+  

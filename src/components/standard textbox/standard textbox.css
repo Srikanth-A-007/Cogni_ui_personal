@@ -1,0 +1,7 @@
+.textField {
+    border: 2px solid var(--main-color); /* Specify the width and style */
+    padding: 8px; /* Optional: Add some padding */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    margin-top: 2px;
+}
+  

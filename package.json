@@ -2,14 +2,15 @@
   "name": "cogni_reacttest",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Srikanth-A-007.github.io/Cogni_ReactTest",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "homepage": "https://Srikanth-A-007.github.io/Cogni_ReactTest",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -17,8 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build",
-
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

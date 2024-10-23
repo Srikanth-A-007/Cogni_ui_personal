@@ -1,0 +1,62 @@
+
+/* Hide the native checkbox */
+.hidden-checkbox {
+  display: none;
+}
+
+/* Custom checkbox box */
+.custom-checkbox-box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Change color when checked */
+.custom-checkbox-box.checked {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+/* Add a checkmark (optional) */
+.custom-checkbox-box.checked::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+/* Change the background color when the dropdown is focused or selected */
+select:focus {
+  background-color: var(--main-color); /* Use the main color when focused */
+  color: white; /* Optional: Change text color to white */
+}
+
+/* Style options (note: this may not work in all browsers) */
+select option {
+  background-color: white; /* Default background for options */
+  color: black; /* Default text color for options */
+}
+
+/* Optionally, style the selected option (may have limited support) */
+select option:checked {
+  background-color: var(--main-color); /* Use the main color for selected options */
+  color: white; /* Optional: Change text color to white */
+}
