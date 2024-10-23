@@ -1,6 +1,6 @@
 button {
     background-color: var(--main-color);
-    color: white;
+    color: red;
     padding: 10px;
     border: none;
     cursor: pointer;
