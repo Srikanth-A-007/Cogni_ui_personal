@@ -19,7 +19,7 @@ const StandardCheckbox = () => {
           checked={isChecked}
           onChange={handleCheckboxChange}
         />
-        check the box if you are not gay
+        check the box 
       </label>
       <p>{isChecked ? 'Checkbox is checked' : 'Checkbox is unchecked'}</p>
     </div>
