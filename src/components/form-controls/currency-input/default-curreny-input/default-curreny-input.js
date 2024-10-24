@@ -4,19 +4,34 @@ import "./default-curreny-input.css"; // Import the CSS for styling
 const CurrencyInput = ({ config }) => {
   const [value, setValue] = useState(''); // State to manage input value
 
-  // Function to format the value as currency
+  // Function to format the value with commas and dollar sign
   const formatCurrency = (value) => {
-    const cleanValue = value.replace(/[^0-9.]/g, ''); // Only allow numbers and decimal
-    return cleanValue ? `$${cleanValue}` : '$'; // Always prepend '$'
+    // Remove non-numeric characters except the decimal point
+    const cleanValue = value.replace(/[^0-9.]/g, '');
+
+    if (!cleanValue) return '$'; // If value is empty, return only the dollar symbol
+
+    // Split the value into the integer and decimal parts
+    const [integerPart, decimalPart] = cleanValue.split('.');
+
+    // Format the integer part with commas
+    const formattedInteger = new Intl.NumberFormat().format(integerPart);
+
+    // Combine the integer part with the decimal part (if any)
+    return decimalPart !== undefined
+      ? `$${formattedInteger}.${decimalPart}`
+      : `$${formattedInteger}`;
   };
 
   // Handle input change to allow only numbers and decimals
   const handleChange = (event) => {
     const inputValue = event.target.value;
 
-    // Allow only numbers and decimal
-    const numericValue = inputValue.replace(/[^0-9.]/g, ''); // Keep only numbers and decimal
-    setValue(numericValue); // Set cleaned value (numbers only)
+    // Remove non-numeric characters except the decimal point
+    const numericValue = inputValue.replace(/[^0-9.]/g, '');
+
+    // Set the cleaned numeric value
+    setValue(numericValue);
   };
 
   // Clear the input
@@ -34,7 +49,7 @@ const CurrencyInput = ({ config }) => {
           id="currency"
           type="text"
           className="currency-input"
-          value={formatCurrency(value)} // Display formatted value with dollar symbol
+          value={formatCurrency(value)} // Display formatted value with commas and dollar symbol
           onChange={handleChange}
           placeholder="Enter amount"
         />
@@ -59,4 +74,3 @@ CurrencyInput.defaultProps = {
 };
 
 export default CurrencyInput;
-
