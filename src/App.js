@@ -1,6 +1,6 @@
 // C:\Srikanth\React_JS\01basicreact\src\App.js
 import React from 'react';
-import StandardButton from './components/standard button/standard button';
+import StandardButton from './components/standard_button/standard button';
 import StandardTextbox from './components/standard textbox/standard textbox';
 import StandardCheckbox from './components/standard checkbox/standard checkbox';
 import StandardDropdown from './components/standard dropdown/standard dropdown';
