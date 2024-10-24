@@ -9,6 +9,7 @@ const StandardCheckbox = () => {
     setIsChecked(prevState => !prevState);
   };
 
+  
   return (
     <div>
       <h2>checkbox</h2>
