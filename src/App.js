@@ -6,6 +6,7 @@ import StandardCheckbox from './components/standard checkbox/standard checkbox';
 import StandardDropdown from './components/standard dropdown/standard dropdown';
 import StandardTile from './components/standard-tile/standard-tile';
 import StandardRadioButton from './components/standard-radio-button/standard-radio-button'; // Change the import name to StandardRadioButton
+import Showcase from './showcase';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <StandardDropdown />
       <StandardCheckbox />
       <StandardRadioButton /> {/* Updated component usage */}
+      <Showcase /> {/* Correctly capitalize the component name */}
       
       <div className="tile-container">
         <StandardTile 
