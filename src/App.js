@@ -6,6 +6,7 @@ import StandardDropdown from './components/standard dropdown/standard dropdown';
 import StandardTile from './components/standard-tile/standard-tile';
 import StandardRadioButton from './components/standard-radio-button/standard-radio-button'; // Change the import name to StandardRadioButton
 import Showcase from './showcase';
+//import CurrencyInput from './components/form-controls/currency-input/default-curreny-input/default-curreny-input';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <StandardRadioButton /> {/* Updated component usage */}
       <Showcase /> {/* Correctly capitalize the component name */}
       
+      <StandardRadioButton /> {/* Updated component usage */}     
+     {/* <CurrencyInput /> */}
       <div className="tile-container">
         <StandardTile 
           imageUrl="https://via.placeholder.com/200" 
