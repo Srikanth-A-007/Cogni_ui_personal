@@ -25,7 +25,7 @@ const CheckboxGroup = () => {
     <div>
       <h2>Select all the previous designations</h2>
       {options.map(option => (
-        <label key={option.id}>
+        <div><label key={option.id}>
           <input
             type="checkbox"
             value={option.id}
@@ -33,7 +33,8 @@ const CheckboxGroup = () => {
             onChange={handleCheckboxChange}
           />
           {option.label}
-        </label>
+        </label></div>
+       
       ))}
       <div>
         <h3>Selected Options:</h3>

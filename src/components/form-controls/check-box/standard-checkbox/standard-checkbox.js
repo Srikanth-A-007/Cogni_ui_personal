@@ -11,13 +11,14 @@ const StandardCheckbox = () => {
 
   return (
     <div>
+      <h2>checkbox</h2>
       <label>
         <input
           type="checkbox"
           checked={isChecked}
           onChange={handleCheckboxChange}
         />
-        check the box if you are not
+        check the box if you are not gay
       </label>
       <p>{isChecked ? 'Checkbox is checked' : 'Checkbox is unchecked'}</p>
     </div>

@@ -5,6 +5,8 @@ import StandardTextbox from './components/standard textbox/standard textbox';
 import StandardDropdown from './components/standard dropdown/standard dropdown';
 import StandardTile from './components/standard-tile/standard-tile';
 import StandardRadioButton from './components/standard-radio-button/standard-radio-button'; // Change the import name to StandardRadioButton
+import Showcase from './showcase';
+
 function App() {
   return (
     <div className="app-container">
