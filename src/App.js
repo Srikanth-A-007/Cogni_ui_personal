@@ -6,7 +6,11 @@ import StandardCheckbox from './components/standard checkbox/standard checkbox';
 import StandardDropdown from './components/standard dropdown/standard dropdown';
 import StandardTile from './components/standard-tile/standard-tile';
 import StandardRadioButton from './components/standard-radio-button/standard-radio-button'; // Change the import name to StandardRadioButton
+<<<<<<< Updated upstream
 import Showcase from './showcase';
+=======
+import CurrencyInput from './components/form-controls/currency-input/default-curreny-input/default-curreny-input';
+>>>>>>> Stashed changes
 
 function App() {
   return (
@@ -16,9 +20,14 @@ function App() {
       <StandardTextbox />
       <StandardDropdown />
       <StandardCheckbox />
+<<<<<<< Updated upstream
       <StandardRadioButton /> {/* Updated component usage */}
       <Showcase /> {/* Correctly capitalize the component name */}
       
+=======
+      <StandardRadioButton /> {/* Updated component usage */}     
+      <CurrencyInput /> 
+>>>>>>> Stashed changes
       <div className="tile-container">
         <StandardTile 
           imageUrl="https://via.placeholder.com/200" 
