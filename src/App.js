@@ -13,6 +13,7 @@ function App() {
       <StandardTextbox />
       <StandardDropdown />   
       <StandardRadioButton /> {/* Updated component usage */}
+      <Showcase /> {/* Correctly capitalize the component name */}
       
       <div className="tile-container">
         <StandardTile 
