@@ -21,6 +21,7 @@ const CheckboxGroup = () => {
 
   return (
     <div>
+      <h2>Checkbox group</h2>
       <h2>Select all the previous designations</h2>
       {options.map(option => (
         <div key={option.id}>

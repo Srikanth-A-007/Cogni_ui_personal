@@ -10,7 +10,7 @@ const StandardCheckbox = () => {
 
   return (
     <div>
-      <h2>Checkbox</h2>
+      <h2>Standard checkbox</h2>
       <label className="custom-checkbox">
         <input
           type="checkbox"
