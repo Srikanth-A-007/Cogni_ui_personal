@@ -1,25 +1,24 @@
 import React, { useState } from 'react';
+import './standard-checkbox.css'; // Ensure to create this CSS file
 
 const StandardCheckbox = () => {
-  // State to manage the checkbox
   const [isChecked, setIsChecked] = useState(false);
 
-  // Handler for checkbox change
   const handleCheckboxChange = () => {
     setIsChecked(prevState => !prevState);
   };
 
-  
   return (
     <div>
-      <h2>checkbox</h2>
-      <label>
+      <h2>Checkbox</h2>
+      <label className="custom-checkbox">
         <input
           type="checkbox"
           checked={isChecked}
           onChange={handleCheckboxChange}
-        />
-        check the box if you are not gay
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             
+        <span className="checkmark"></span>      
+        Check the box if you are not gay
       </label>
       <p>{isChecked ? 'Checkbox is checked' : 'Checkbox is unchecked'}</p>
     </div>

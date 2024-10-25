@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
+import './check-box-group.css'; // Ensure to create this CSS file
 
 const CheckboxGroup = () => {
-  // State to manage the checked state of each checkbox
   const [selectedOptions, setSelectedOptions] = useState([]);
 
-  // Options for the checkbox group
   const options = [
     { id: 'Intern', label: 'Intern' },
     { id: 'Associate software engineer', label: 'Associate software engineer' },
     { id: 'Software engineer', label: 'Software engineer' },
   ];
 
-  // Handler for checkbox change
   const handleCheckboxChange = (event) => {
     const { value } = event.target;
     setSelectedOptions(prevSelected =>
@@ -25,16 +23,19 @@ const CheckboxGroup = () => {
     <div>
       <h2>Select all the previous designations</h2>
       {options.map(option => (
-        <div><label key={option.id}>
-          <input
-            type="checkbox"
-            value={option.id}
-            checked={selectedOptions.includes(option.id)}
-            onChange={handleCheckboxChange}
-          />
-          {option.label}
-        </label></div>
-       
+        <div key={option.id}>
+          <label className="custom-checkbox">
+            <input
+              type="checkbox"
+              value={option.id}
+              checked={selectedOptions.includes(option.id)}
+              onChange={handleCheckboxChange}
+            />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="checkmark"></span>
+            {option.label}
+          </label>
+          <br/>
+        </div>
       ))}
       <div>
         <h3>Selected Options:</h3>
