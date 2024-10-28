@@ -1,0 +1,39 @@
+/* TextButton.css */
+
+.text-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align label and button to the start (left) */
+    margin: 10px 0 20px 0; /* Space below the button container */
+}
+
+.text-button-label {
+    font-size: 16px;
+    /* color: #555555; Light gray for the label text */
+    margin-bottom: 10px; /* Space between label and button */
+}
+.text-button {
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: #007bff; /* Blue text color */
+    background: none; /* No background */
+    border: none; /* No border */
+    text-decoration: underline; /* Underline text for a button look */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth transition for color on hover */
+  }
+  
+  .text-button:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .text-button:active {
+    color: #004080; /* Even darker when pressed */
+  }
+  
+  .text-button:disabled {
+    color: #cccccc; /* Gray when disabled */
+    cursor: not-allowed; /* Not-allowed cursor when disabled */
+  }
+  

@@ -1,0 +1,39 @@
+/* PrimaryButton.css */
+
+.simple-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align label and button to the start (left) */
+    margin: 10px 0 20px 0; /* Space below the button container */
+}
+
+.simple-button-label {
+    font-size: 16px;
+    /* color: #555555; Light gray for the label text */
+    margin-bottom: 10px; /* Space between label and button */
+}
+
+.simple-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(7, 107, 201);
+    background-color:#fff; /* Primary blue color */
+    border: none;
+    border-radius: 50px; /* Larger radius for curved/pill shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.simple-button:hover {
+    background-color: #a9e2f8; /* Darker shade on hover */
+}
+
+.simple-button:active {
+    background-color: var(--secondary-color); /* Even darker when pressed */
+}
+
+.simple-button:disabled {
+    background-color: #cccccc; /* Light gray when disabled */
+    cursor: not-allowed;
+}

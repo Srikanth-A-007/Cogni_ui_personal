@@ -37,7 +37,7 @@
   .clear-button {
     margin-top: 10px;
     padding: 10px; 
-    background-color: #f44336;
+    background-color: main-color;
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,7 +47,7 @@
   
   /* Clear button hover effect */
   .clear-button:hover {
-    background-color: #d32f2f;
+    background-color: #3e829d;
   }
   
   /* Formatted value display */
@@ -56,4 +56,4 @@
     font-size: 18px;
     color: #333;
   }
-  
+   
