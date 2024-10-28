@@ -2,7 +2,7 @@
   "name": "cogni_reacttest",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Srikanth-A-007.github.io/Cogni_ReactTest",
+  "homepage": "https://github.com/Srikanth-A-007/Cogni_ui_personal",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
