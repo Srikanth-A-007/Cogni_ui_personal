@@ -3,6 +3,10 @@ import LinkButton from './button/link/link-button'; // Update the path to link-b
 import CurrencyInput from './currency-input/default-curreny-input/default-curreny-input';
 import StandardCheckbox from './check-box/standard-checkbox/standard-checkbox';
 import CheckboxGroup from './check-box/check-box-group/check-box-group';
+import PrimaryButton from './button/primary/primary-button';
+import SecondaryButton from './button/Secondary/secondary-button';
+import SimpleButton from './button/simple/simple-button';
+import TextButton from './button/text/text-button';
 
 const FormControlShowcase = () => {
   return (
@@ -15,7 +19,10 @@ const FormControlShowcase = () => {
 
       <StandardCheckbox/>
       <CheckboxGroup/>
-      
+      <PrimaryButton/>
+      <SecondaryButton/>
+      <SimpleButton/>
+      <TextButton/>
     </div>
   );
 };
