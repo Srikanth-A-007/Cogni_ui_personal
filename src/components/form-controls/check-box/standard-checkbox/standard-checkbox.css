@@ -1,0 +1,46 @@
+@import '../../../components.css';
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .custom-checkbox input {
+    display: none; /* Hide default checkbox */
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white; /* Background color when unchecked */
+    border: 1px solid black; 
+    /* Border color */
+    border-radius: 3px; /* Optional: round corners */
+    margin-right: 10px; /* Space between checkbox and label */
+  }
+  
+  .custom-checkbox input:checked + .checkmark {
+    background-color: var(--main-color); /* Background color when checked */
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px; /* Adjust position for the tick */
+    top: 2px; /* Adjust position for the tick */
+    width: 6px;
+    height: 12px;
+    border: solid white; /* Tick color */
+    border-width: 0 2px 2px 0; /* Create the tick */
+    transform: rotate(45deg); /* Rotate to create the tick */
+  }
+  
+  .custom-checkbox input:checked + .checkmark:after {
+    display: block; /* Show tick when checked */
+  }
+  
