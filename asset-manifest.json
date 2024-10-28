@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Srikanth-A-007/Cogni_ui_personal/static/css/main.bf976b28.css",
-    "main.js": "/Srikanth-A-007/Cogni_ui_personal/static/js/main.2c40e0ae.js",
-    "static/js/453.1c65eab0.chunk.js": "/Srikanth-A-007/Cogni_ui_personal/static/js/453.1c65eab0.chunk.js",
-    "index.html": "/Srikanth-A-007/Cogni_ui_personal/index.html",
-    "main.bf976b28.css.map": "/Srikanth-A-007/Cogni_ui_personal/static/css/main.bf976b28.css.map",
-    "main.2c40e0ae.js.map": "/Srikanth-A-007/Cogni_ui_personal/static/js/main.2c40e0ae.js.map",
-    "453.1c65eab0.chunk.js.map": "/Srikanth-A-007/Cogni_ui_personal/static/js/453.1c65eab0.chunk.js.map"
+    "main.css": "/Cogni_ui_personal/static/css/main.bf976b28.css",
+    "main.js": "/Cogni_ui_personal/static/js/main.d927b6b5.js",
+    "static/js/453.7b184d6d.chunk.js": "/Cogni_ui_personal/static/js/453.7b184d6d.chunk.js",
+    "index.html": "/Cogni_ui_personal/index.html",
+    "main.bf976b28.css.map": "/Cogni_ui_personal/static/css/main.bf976b28.css.map",
+    "main.d927b6b5.js.map": "/Cogni_ui_personal/static/js/main.d927b6b5.js.map",
+    "453.7b184d6d.chunk.js.map": "/Cogni_ui_personal/static/js/453.7b184d6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf976b28.css",
-    "static/js/main.2c40e0ae.js"
+    "static/js/main.d927b6b5.js"
   ]
 }
