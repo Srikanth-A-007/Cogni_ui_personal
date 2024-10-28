@@ -7,6 +7,7 @@ import PrimaryButton from './button/primary/primary-button';
 import SecondaryButton from './button/Secondary/secondary-button';
 import SimpleButton from './button/simple/simple-button';
 import TextButton from './button/text/text-button';
+import CardCheckbox from './check-box/checkbox-cards/checkbox-cards';
 
 const FormControlShowcase = () => {
   return (
@@ -23,6 +24,8 @@ const FormControlShowcase = () => {
       <SecondaryButton/>
       <SimpleButton/>
       <TextButton/>
+      <CardCheckbox/>
+      
     </div>
   );
 };
