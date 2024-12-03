@@ -11,7 +11,7 @@ import Showcase from './showcase';
 function App() {
   return (
     <div className="app-container">
-      <h1>Hello Cogni</h1>
+      <h1>Hello srikanth</h1>
       <StandardButton />
       <StandardTextbox />
       <StandardDropdown />   
